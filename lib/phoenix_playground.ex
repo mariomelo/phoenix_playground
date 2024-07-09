@@ -197,6 +197,7 @@ defmodule PhoenixPlayground do
         live_view: [signing_salt: @signing_salt],
         secret_key_base: @secret_key_base,
         pubsub_server: PhoenixPlayground.PubSub,
+        check_origins: false,
         live_reload:
           [
             web_console_logger: true,
